@@ -58,3 +58,36 @@ console.log(ary7);
 
 // mapとfilter
 const nameAry = ["Tanaka", "Yamada", "katekichi"];
+
+// for (let i = 0; i < nameAry.length; i++) {
+//   console.log(nameAry[i]);
+// }
+
+// const nameAry2 = nameAry.map((name) => {
+//   return name;
+// });
+
+// console.log(nameAry2);
+
+// nameAry.map((name) => console.log(name));
+
+const numAry = [1, 2, 3, 4, 5];
+// const newNumAry = numAry.filter((num) => {
+//   return num % 2;
+// });
+// console.log(newNumAry);
+
+const nameAry2 = numAry.map((num, idx) =>
+  console.log(`${idx + 1}番目は${num}です`)
+);
+
+console.log(nameAry2);
+
+const newNameAry = nameAry.map((name) => {
+  if (name === "katekichi") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameAry);
